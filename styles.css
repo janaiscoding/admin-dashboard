@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display:grid;
+    height: 100vh;
+    grid-template-columns: repeat(4,1fr);
+}
+
+:root {
+    --sidebar-background-color: rgb(63, 63, 206);
+    --header-background-color: white;
+    --button-background-color: blue;
+    --text-color-sidebar: white;
+    --text-color-buttons: white;
+    --text-color-content: black;
+    --content-background-color: grey;
+}
+
+.sidebar {
+    background-color: var(--sidebar-background-color);
+    color: var(--text-color-sidebar);
+    font-size: 1rem;
+    grid-column: 1 / 2;
+    border: 1px solid black;
+}
+.sidebar-header {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.sidebar-menu {
+    border: 1px solid black;
+    display: grid;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.sidebar-settings {
+    border: 1px solid black;
+    display: grid;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.home, 
+.profile,
+.messages,
+.history,
+.tasks,
+.communities {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.settings, 
+.support,
+.privacy {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sidebar .icon {
+    justify-self: start;
+    align-self: center;
+    padding-left: 20px;
+}
+.sidebar .title {
+    justify-self: start;
+    align-self: center;
+}
+
+.header {
+    border: 1px solid black;
+    display: grid;
+    grid-column: 2/5;
+    grid-template-rows: repeat(2,1fr);
+}
+
+.header-first-row {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+    grid-row-start:1;
+}
+
+input {
+    grid-column: span 2;
+}
+
+.header-second-row {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+    grid-row-start:2;
+}
+
+.content-container {
+    display: grid;
+    border: 1px solid black;
+    grid-column:2/5 ;
+}
+
+.left-content {
+    border: 1px solid black;
+    display: grid;
+}
+
+.left-content-title {
+    grid-column-start: 2;
+    justify-self: flex-start;
+    padding-left: 20px;
+}
+
+.card {
+    border: 1px solid black;
+    display: grid;
+    padding: 20px;
+}
+.card-title {
+    border: 1px solid black;
+    font-weight: bold;
+}
+.card-content{
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+.card-icons {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+    
+}
+
+.right-content {
+    display: grid;
+    border: 1px solid black;
+    grid-column-start: 4;
+}
+
