@@ -50,8 +50,7 @@ table {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display:grid;
-    height: 100vh;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, minmax(100px,1fr));
 }
 
 :root {
@@ -68,6 +67,7 @@ body {
     background-color: var(--sidebar-background-color);
     color: var(--text-color-sidebar);
     font-size: 1rem;
+    
     grid-column: 1 / 2;
     border: 1px solid black;
 }
@@ -129,7 +129,6 @@ body {
 .header {
     border: 1px solid black;
     display: grid;
-    grid-template-rows: repeat(2,1fr);
 }
 
 .header-first-row {
