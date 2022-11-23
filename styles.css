@@ -63,10 +63,11 @@ body {
     --header-background-color: #FDF6EC;
     --button-background-color: blue;
 
-    --text-color-sidebar: #FDF6EC;
-    --text-color-card: black;
+    --sidebar-text-color: #FDF6EC;
+    --card-text-color: black;
     --button-text-color: black;
     --heading-text-color: black;
+    --subtitle-text-color: grey;
 }
 
 .sidebar {
@@ -75,15 +76,13 @@ body {
     font-size: 1rem;
     display: grid;
     grid-column: 1 / 2;
-    padding-left: 20px;
-    grid-template-rows: repeat(auto-fill, 1fr);
     align-items: center;
-    padding-top: 3vh;
+    padding: 3vh 40px 0px 40px;
 }
 
 .sidebar-header,
 .communities {
-    margin-bottom: 40px;
+    margin-bottom: 3vh;
 }
 
 .privacy {
