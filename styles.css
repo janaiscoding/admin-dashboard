@@ -52,22 +52,21 @@ body {
     font-weight: normal;
     font-style: normal;
     display:grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
     height: 100vh;
     background-color: var(--website-background-color);  
 }
 
 :root {
-    --bc-website: #FDF6EC;
-    --bc-sidebar: #C65D7B;
-    --bc-card: #FDF6EC;
-    --bc-header: #FDF6EC;
-    --bc-button: blue;
+    --website-background-color: #FDF6EC;
+    --sidebar-background-color: #C65D7B;
+    --card-background-color: #FDF6EC;
+    --header-background-color: #FDF6EC;
+    --button-background-color: blue;
 
-    --tc-sidebar: #FDF6EC;
-    --tc-card: black;
-    --tc-buttons: black;
-    --tc-heading: black;
+    --text-color-sidebar: #FDF6EC;
+    --text-color-card: black;
+    --button-text-color: black;
+    --heading-text-color: black;
 }
 
 .sidebar {
@@ -77,12 +76,18 @@ body {
     display: grid;
     grid-column: 1 / 2;
     padding-left: 20px;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    align-items: center;
+    padding-top: 3vh;
 }
 
 .sidebar-header,
-.communities,
+.communities {
+    margin-bottom: 40px;
+}
+
 .privacy {
-    margin-bottom: 50px;
+    margin-bottom: 20vh;
 }
 
 .sidebar-header,   
@@ -269,9 +274,10 @@ img.profile-picture {
     font-weight: bold;
     letter-spacing: 1px;
 }
-.user-name {
+.user-name,
+.trending-user-name {
     font-size: 1.1rem;
-    color: var(--text-color-content);
+    color: var(--tc-card);
     font-weight: bold;
     letter-spacing: 1px;
 }
