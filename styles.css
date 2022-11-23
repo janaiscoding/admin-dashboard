@@ -53,12 +53,14 @@ body {
     font-style: normal;
     display:grid;
     grid-template-columns: 200px repeat(auto-fit, 1fr);
+    height: 100vh;  
 }
 
 :root {
-    --sidebar-background-color: white;
-    --header-background-color: white;
+    --sidebar-background-color: #8FBDD3;
+    --sidebar-text-color: #FDF6EC;
     --button-background-color: blue;
+    --heading-text-color: #2C3639;
     --text-color-sidebar: white;
     --text-color-buttons: white;
     --text-color-content: black;
@@ -67,7 +69,7 @@ body {
 
 .sidebar {
     background-color: var(--sidebar-background-color);
-    color: var(--text-color-sidebar);
+    color: var(--sidebar-text-color);
     font-size: 1rem;
     display: grid;
     grid-column: 1 / 2;
@@ -109,15 +111,16 @@ body {
 .sidebar .title {
     justify-self: start;
     align-self: center;
-    color: var(--text-color-content);
     font-size: 1.2rem;
 }
 .sidebar .header-title {
     font-size: 1.3rem;
+    color: var(--heading-text-color);
 }
 .right-wrapper {
     grid-column: 2/5;
     display: grid;
+    align-self: flex-start;
 }
 
 .header {
@@ -153,7 +156,14 @@ img.profile-picture {
     justify-self: right;
 } 
 
-.header-first-row-right,
+.header-first-row-right{
+    display: grid;
+    grid-column: 3/4;
+    grid-template-columns: 20px 30px 80px;
+    justify-self: right;
+    align-items: center;
+    gap: 20px;
+}
 .header-second-row-right{
     display: grid;
     grid-column: 3/4;
