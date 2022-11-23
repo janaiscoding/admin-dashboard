@@ -3,8 +3,8 @@
 - Live preview [here](https://janaiscoding.github.io/admin-dashboard/).
 
 - Full Dashboard Design using Grid.</br> 
+- Plans for the future: Full responsiveness, add Favicon, create better links, use JS for the buttons</br>
 
-</br>
 
 <h1> Built with </h1>
 
