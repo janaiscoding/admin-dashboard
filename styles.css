@@ -54,18 +54,20 @@ body {
     display:grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     height: 100vh;
-    background-color: var(--content-background-color);  
+    background-color: var(--website-background-color);  
 }
 
 :root {
-    --sidebar-background-color: #C65D7B;
-    --sidebar-text-color: #FDF6EC;
-    --button-background-color: blue;
-    --heading-text-color: #2C3639;
-    --text-color-sidebar: white;
-    --text-color-buttons: white;
-    --text-color-content: black;
-    --content-background-color: #F6E7D8;
+    --background-color-website: #FDF6EC;
+    --background-color-sidebar: #C65D7B;
+    --background-color-card: #FDF6EC;
+    --background-color-header: #FDF6EC;
+    --background-color-button: blue;
+
+    --text-color-sidebar: #FDF6EC;
+    --text-color-card: black;
+    --text-color-buttons: black;
+    --text-color-heading: black;
 }
 
 .sidebar {
@@ -171,6 +173,8 @@ img.profile-picture {
 }
 
 .content-container {
+    background-color: var(--content-background-color);
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
@@ -196,6 +200,7 @@ img.profile-picture {
     font-weight: bold;
 }
 .card-content{
+    padding: 10px 0px;
 }
 .card-icons {
     display: grid;
@@ -248,6 +253,7 @@ img.profile-picture {
 
 /* all hovers */
 .icon:hover,
+.sidebar-title:hover,
 .search-icon:hover,
 .notification-icon:hover,
 button:hover,
