@@ -180,12 +180,14 @@ img.profile-picture {
 }
 
 .left-content {
+    border: 1px solid black;
     display: grid;
     grid-column: 1/3;
     grid-template-columns: 1fr 1fr;
 }
 
 .left-content-title {
+    border: 1px solid black;
     display: grid;
     align-self:flex-end;
     grid-column: span 2;
@@ -193,16 +195,22 @@ img.profile-picture {
 }
 
 .card {
+    border: 1px solid black;
     display: grid;
     padding: 20px;
 }
+
 .card-title {
+    border: 1px solid black;
     font-weight: bold;
 }
+
 .card-content{
+    border: 1px solid black;
     padding: 10px 0px;
 }
 .card-icons {
+    border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -212,6 +220,7 @@ img.profile-picture {
 }
 
 .right-content {
+    border: 1px solid black;
     display: grid;
     grid-column-start: 3;
     align-self: flex-start;
@@ -220,7 +229,15 @@ img.profile-picture {
 .announcement-container,
 .trending-container {
     display:grid;
+    border: 1px solid black;
 }
+
+.trending-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+}
+
 .trending-user-image {
     border-radius: 50%
 }
