@@ -2,7 +2,6 @@
 
 - Live preview [here](https://janaiscoding.github.io/admin-dashboard/).
 
-
 - Full Dashboard Design using Grid.</br> 
 </br>
 
@@ -22,10 +21,10 @@
 
 <h1>Learned during this project</h1>
 
-- Improved Grid and CSS skills</br>
-- Project management and problem solving </br>
-- Better understanding of repeat,auto-fit, auto-fill and minmax functions</br>
-- Improved Git workflow 
+- Improved Grid and CSS skills.</br>
+- Project management and problem solving. </br>
+- Better understanding of repeat,auto-fit, auto-fill and minmax functions.</br>
+- Improved Git workflow - Replace gits and create new clones.
 
 <h3> Project details </h3>
 
