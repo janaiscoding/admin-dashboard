@@ -58,7 +58,7 @@ body {
 
 :root {
     --website-background-color: #EEEEEE;
-    --sidebar-background-color: #C65D7B;
+    --sidebar-background-color: #c65d7bc2;
     --card-background-color: #FDF6EC;
     --header-background-color: #FDF6EC;
     --button-background-color: #C65D7B;
@@ -75,7 +75,6 @@ body {
 .sidebar {
     background-color: var(--sidebar-background-color);
     color: var(--sidebar-text-color);
-    font-size: 1rem;
     display: grid;
     grid-column: 1 / 2;
     align-items: center;
@@ -265,7 +264,7 @@ img.profile-picture {
 }
 .sidebar-title {
     color: var(--sidebar-text-color);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     align-self: center;
     padding-right: 10px;
     font-weight: 900;   
@@ -273,7 +272,7 @@ img.profile-picture {
 }
 .sidebar .title {
     color: var(--sidebar-text-color);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
@@ -286,10 +285,13 @@ img.profile-picture {
     font-size: 0.8rem;
 }
 
-.card-title {
+a.card-title {
     color: var(--heading-text-color);
     font-weight: 900;
     font-size: 1.3rem;
+}
+a.card-title:hover {
+    cursor: pointer;
 }
 
 .card-content{
@@ -315,15 +317,16 @@ a.trending-user-name {
 .search-icon:hover,
 .notification-icon:hover,
 button:hover,
-a:hover,
 .card-icon-favourite:hover,
 .card-icon-watch:hover,
 .card-icon-share:hover,
 .profile-picture:hover,
 .user-name:hover,
 .title:hover,
-.card-title:hover {
-    transform: scale(1.03);
+.user-name-bio:hover,
+.user-name:hover,
+.trending-user-name:hover{
+    transform: scale(1.02);
     cursor: pointer;
 }
 
