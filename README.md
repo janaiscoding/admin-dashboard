@@ -21,12 +21,12 @@
 
 <h1>Learned during this project</h1>
 
-- Improved Grid and CSS skills.</br>
-- Project management and problem solving. </br>
-- Better understanding of repeat,auto-fit, auto-fill and minmax functions.</br>
+- Most important thing I learned: structured, step-by-step work improves productivity by A LOT.
+- I feel more confident with Grid and my general CSS skills after this project.</br>
+- Better understanding of repeat, auto-fit, auto-fill and minmax functions.</br>
 - Improved Git workflow - Replace gits and create new clones.
 
 <h3> Project details </h3>
 
 - This project is part of The Odin Project's [curriculum](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard) 
-- There are plenty of things I would like to improve in the future to this project, when I gain more knowledge.</br>
+- All icons I have used in this project come from [flaticon](https://www.flaticon.com/)
