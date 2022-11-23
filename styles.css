@@ -104,6 +104,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.profile-picture {
+    border-radius: 50%;
+}
 
 .settings, 
 .support,
@@ -117,6 +120,10 @@ body {
     justify-self: start;
     align-self: center;
     padding-left: 20px;
+}
+.sidebar .icon:hover {
+    transform: scale(1.03);
+    cursor: pointer;
 }
 .sidebar .title {
     justify-self: start;
@@ -192,8 +199,10 @@ input {
     border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: end;
-    
+    align-items: center;
+    justify-self: flex-end;
+    gap: 20px;
+    padding: 5px;
 }
 
 .right-content {
