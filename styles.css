@@ -119,8 +119,8 @@ body {
 .sidebar .title {
     justify-self: start;
     align-self: center;
-    font-size: 1.2rem;
 }
+
 .header-title {
     font-size: 1.3rem;
     color: var(--heading-text-color);
@@ -260,26 +260,33 @@ img.profile-picture {
     padding: 10px 0px 10px 20px;
     letter-spacing: 1px;
 }
+
 .sidebar-title {
     color: var(--sidebar-text-color);
     font-size: 1.5rem;
     align-self: center;
     padding-right: 10px;
-    font-weight: bold;
+    font-weight: 900;   
     letter-spacing: 1px;
 }
-
+.sidebar .title {
+    color: var(--sidebar-text-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
 .greeting-text {
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.user-name-bio,
-.user-name,
-.trending-user-name {
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-size: 1.2rem;
+a.user-name-bio,
+a.user-name,
+a.trending-user-name {
     color: var(--user-text-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 
 /* all hovers */
@@ -288,6 +295,7 @@ img.profile-picture {
 .search-icon:hover,
 .notification-icon:hover,
 button:hover,
+a:hover,
 .card-icon-favourite:hover,
 .card-icon-watch:hover,
 .card-icon-share:hover,
@@ -300,4 +308,12 @@ button:hover,
 .right-content-trending-title:hover {
     transform: scale(1.03);
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
 }
