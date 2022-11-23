@@ -1,8 +1,9 @@
-<h1> Jana's Admin Dashboard </h1>
+<h1>Admin Dashboard </h1>
 
 - Live preview [here](https://janaiscoding.github.io/admin-dashboard/).
 
 - Full Dashboard Design using Grid.</br> 
+
 </br>
 
 <h1> Built with </h1>
