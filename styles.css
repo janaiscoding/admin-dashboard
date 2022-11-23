@@ -58,9 +58,9 @@ body {
 
 :root {
     --website-background-color: #EEEEEE;
-    --sidebar-background-color: #c65d7bc2;
-    --card-background-color: #FDF6EC;
-    --header-background-color: #FDF6EC;
+    --sidebar-background-color: #c65d7b;
+    --card-background-color: #f3f3f8e6;
+    --header-background-color: #f3f3f8e6;
     --button-background-color: #C65D7B;
 
 
@@ -132,6 +132,7 @@ body {
 .header {
     display: grid;
     background-color: var(--header-background-color);
+    padding: 10px 0 3vh 0;
 }
 
 .header-first-row,
