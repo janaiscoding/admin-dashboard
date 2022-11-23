@@ -61,14 +61,14 @@ body {
     --sidebar-background-color: #C65D7B;
     --card-background-color: #FDF6EC;
     --header-background-color: #FDF6EC;
-    --button-background-color: blue;
+    --button-background-color: #C65D7B;
 
 
     --sidebar-text-color: #FDF6EC;
-    --card-text-color: black;
-    --button-text-color: black;
-    --heading-text-color: black;
-    --subtitle-text-color: grey;
+    --card-text-color: #2C3639;
+    --button-text-color: #FDF6EC;
+    --heading-text-color: #C65D7B;
+    --subtitle-text-color: #2C3639;
     --user-text-color: #C65D7B;
 }
 
@@ -165,7 +165,7 @@ img.profile-picture {
 .header-first-row-right{
     display: grid;
     grid-column: 3/4;
-    grid-template-columns: 20px 30px 80px;
+    grid-template-columns: 20px 30px 100px;
     justify-self: right;
     align-items: center;
     gap: 20px;
@@ -206,13 +206,6 @@ img.profile-picture {
     padding: 20px;
 }
 
-.card-title {
-    font-weight: bold;
-}
-
-.card-content{
-    padding: 10px 0px;
-}
 .card-icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -247,8 +240,10 @@ img.profile-picture {
 }
 
 .trending-info {
+    display: grid;
+    gap: 5px;
     align-self: center;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 /* font styles */
@@ -257,11 +252,17 @@ img.profile-picture {
 .left-content-title {
     color: var(--text-color-content);
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 900;
     padding: 10px 0px 10px 20px;
     letter-spacing: 1px;
-}
 
+}
+.greeting-text{
+    color: var(--text-color-content);
+    font-size: 0.9rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
 .sidebar-title {
     color: var(--sidebar-text-color);
     font-size: 1.5rem;
@@ -276,9 +277,27 @@ img.profile-picture {
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
-.greeting-text {
+.subtitle {
     font-weight: bold;
     letter-spacing: 1px;
+    color: var(--subtitle-text-color);
+    font-weight: 500;
+    opacity: 70%;
+    font-size: 0.8rem;
+}
+
+.card-title {
+    color: var(--heading-text-color);
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.card-content{
+    color: var(--card-text-color);
+    font-weight: 500;
+    font-size: 1rem;
+    padding-top: 20px;
+    line-height: 20px;
 }
 
 a.user-name-bio,
@@ -303,10 +322,7 @@ a:hover,
 .profile-picture:hover,
 .user-name:hover,
 .title:hover,
-.card-title:hover,
-.left-content-title:hover,
-.right-content-title:hover,
-.right-content-trending-title:hover {
+.card-title:hover {
     transform: scale(1.03);
     cursor: pointer;
 }
@@ -333,4 +349,23 @@ a:visited {
 .trending-card {
     background-color: var(--card-background-color);
     box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+}
+
+button {
+  background-color: var(--button-background-color);
+  box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+  border-radius: 4px;
+  border-style: none;
+  color: var(--button-text-color);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 8px 15px 8px;
+  text-align: center;
+}
+
+button:hover,
+button:focus {
+  opacity: .75;
 }
