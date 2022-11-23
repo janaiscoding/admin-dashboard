@@ -58,16 +58,16 @@ body {
 }
 
 :root {
-    --background-color-website: #FDF6EC;
-    --background-color-sidebar: #C65D7B;
-    --background-color-card: #FDF6EC;
-    --background-color-header: #FDF6EC;
-    --background-color-button: blue;
+    --bc-website: #FDF6EC;
+    --bc-sidebar: #C65D7B;
+    --bc-card: #FDF6EC;
+    --bc-header: #FDF6EC;
+    --bc-button: blue;
 
-    --text-color-sidebar: #FDF6EC;
-    --text-color-card: black;
-    --text-color-buttons: black;
-    --text-color-heading: black;
+    --tc-sidebar: #FDF6EC;
+    --tc-card: black;
+    --tc-buttons: black;
+    --tc-heading: black;
 }
 
 .sidebar {
