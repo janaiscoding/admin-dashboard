@@ -52,19 +52,20 @@ body {
     font-weight: normal;
     font-style: normal;
     display:grid;
-    grid-template-columns: 200px repeat(auto-fit, 1fr);
-    height: 100vh;  
+    grid-template-columns: repeat(auto-fit, 1fr);
+    height: 100vh;
+    background-color: var(--content-background-color);  
 }
 
 :root {
-    --sidebar-background-color: #8FBDD3;
+    --sidebar-background-color: #C65D7B;
     --sidebar-text-color: #FDF6EC;
     --button-background-color: blue;
     --heading-text-color: #2C3639;
     --text-color-sidebar: white;
     --text-color-buttons: white;
     --text-color-content: black;
-    --content-background-color: grey;
+    --content-background-color: #F6E7D8;
 }
 
 .sidebar {
@@ -244,8 +245,10 @@ img.profile-picture {
     letter-spacing: 1px;
 }
 .sidebar-title {
-    color: var(--text-color-content);
-    font-size: 1.2rem;
+    color: var(--sidebar-text-color);
+    font-size: 1.5rem;
+    align-self: center;
+    padding-right: 10px;
     font-weight: bold;
     letter-spacing: 1px;
 }
