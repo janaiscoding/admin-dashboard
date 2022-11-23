@@ -217,7 +217,9 @@ img.profile-picture {
 .trending-container {
     display:grid;
 }
-
+.trending-user-image {
+    border-radius: 50%
+}
 
 
 /* font styles */
