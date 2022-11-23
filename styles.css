@@ -52,7 +52,7 @@ body {
     font-weight: normal;
     font-style: normal;
     display:grid;
-    grid-template-columns: repeat(4, minmax(150px,1fr));
+    grid-template-columns: 200px repeat(auto-fit, 1fr);
 }
 
 :root {
@@ -72,76 +72,40 @@ body {
     display: grid;
     grid-column: 1 / 2;
     border: 1px solid black;
-}
-.sidebar-header {
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 50px;
-    align-self: center;
+    padding-left: 20px;
 }
 
-.sidebar-menu {
-    border: 1px solid black;
-    display: grid;
-    gap: 10px;
+.sidebar-header,
+.communities,
+.privacy {
     margin-bottom: 50px;
 }
 
-.sidebar-settings {
-    border: 1px solid black;
-    display: grid;
-    gap: 10px;
-    margin-bottom: 50px;
-}
-
+.sidebar-header,   
 .home, 
 .profile,
 .messages,
 .history,
 .tasks,
-.communities {
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-self: center;
-}
-.profile-picture {
-    border-radius: 50%;
-}
-
+.communities,
 .settings, 
 .support,
 .privacy {
     border: 1px solid black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-self: center;
+    grid-template-columns: 50px 1fr;
+    justify-self: left;
+}
+.profile-picture {
+    border-radius: 50%;
 }
 
 .sidebar .icon {
-    justify-self: flex-end;
+    justify-self: self-start;
     align-self: center;
     padding-right: 30px;
-    
 }
-.icon:hover,
-.search-icon:hover,
-.notification-icon:hover,
-button:hover,
-.card-icon-favourite:hover,
-.card-icon-watch:hover,
-.card-icon-share:hover,
-.profile-picture:hover,
-.user-name:hover,
-.title:hover,
-.card-title:hover,
-.left-content-title:hover,
-.right-content-title:hover,
-.right-content-trending-title:hover {
-    transform: scale(1.03);
-    cursor: pointer;
-}
+
 .sidebar .title {
     justify-self: start;
     align-self: center;
@@ -218,7 +182,6 @@ img.profile-picture {
     align-self:flex-end;
     grid-column: span 2;
     justify-self: flex-start;
-    padding-left: 20px;
 }
 
 .card {
@@ -255,9 +218,47 @@ img.profile-picture {
     display:grid;
 }
 
+
+
+/* font styles */
 .right-content-title,
-.right-content-trending-title {
-    align-self: flex-end;
-    padding-left: 20px;
+.right-content-trending-title,
+.left-content-title {
     border: 1px solid black;
+    color: var(--text-color-content);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 0px 10px 20px;
+    letter-spacing: 1px;
+}
+.sidebar-title {
+    color: var(--text-color-content);
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.user-name {
+    font-size: 1.1rem;
+    color: var(--text-color-content);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* all hovers */
+.icon:hover,
+.search-icon:hover,
+.notification-icon:hover,
+button:hover,
+.card-icon-favourite:hover,
+.card-icon-watch:hover,
+.card-icon-share:hover,
+.profile-picture:hover,
+.user-name:hover,
+.title:hover,
+.card-title:hover,
+.left-content-title:hover,
+.right-content-title:hover,
+.right-content-trending-title:hover {
+    transform: scale(1.03);
+    cursor: pointer;
 }
